@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Linked CSS file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Blaka&family=Dancing+Script:wght@700&family=Smooch&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <!--Title-->
+    <title>Flower Shop</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light " id="home">
+        <a class="navbar-brand logo blaka nav_pad" href="#"><span>
+                <h1>Flowers</h1>
+            </span></a>
+        <button class="navbar-toggler color_blue" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav_font nav_line" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ocassions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.google.com/search?q=anniversary+flowers&client=firefox-b-d&ei=JTz_YtmdEsTJ-QbN84DoDA&oq=anniversa+flower&gs_lcp=Cgdnd3Mtd2l6EAEYATIECAAQDTIECAAQDTIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIECAAQDTIGCAAQHhAHMgYIABAeEAcyBAgAEA0yBggAEB4QBzoHCAAQRxCwAzoICAAQkgMQsAM6CggAELADEMkDEEM6BwgAELADEEM6DAguEMgDELADEEMYAToPCC4Q1AIQyAMQsAMQQxgBOgUIABCRAjoECAAQQzoHCAAQsQMQQ0oECEEYAEoECEYYAVCRCliCPGCuUGgCcAF4AIABiwaIAZ87kgEJMy0yLjUuNy4xmAEAoAEByAEUwAEB2gEGCAEQARgI&sclient=gws-wiz">Anniversary</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=birthday+flowers&client=firefox-b-d&ei=YTz_Yvf9JpSAmgb7hYTYDA&ved=0ahUKEwi3suO4sdL5AhUUgMYKHfsCAcsQ4dUDCA0&uact=5&oq=birthday+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEB4QBzIECAAQDTIECAAQDTIGCAAQHhAHMgYIABAeEAc6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6DAguEMgDELADEEMYAjoSCC4QxwEQ0QMQyAMQsAMQQxgCOg8ILhDUAhDIAxCwAxBDGAJKBAhBGABKBAhGGAFQmQ1YoC1gjjBoAXABeACAAYkMiAHEM5IBCTQtMS43LTQuMZgBAKABAcgBEsABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz">Birthday</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=christmas+flowers&client=firefox-b-d&ei=hjz_YoDbBo-C1e8PyoK32AI&ved=0ahUKEwiAtpXKsdL5AhUPQfUHHUrBDSsQ4dUDCA0&uact=5&oq=christmas+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyCggAEOQCELADGAEyCggAEOQCELADGAEyCggAEOQCELADGAEyDAguEMgDELADEEMYAjIMCC4QyAMQsAMQQxgCMgwILhDIAxCwAxBDGAIyDwguENQCEMgDELADEEMYAkoECEEYAEoECEYYAVDGBliQMWDvNGgBcAF4AIABiAaIAYgGkgEDNi0xmAEAoAEByAETwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz">Christmas</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=congratulatory+flowers&client=firefox-b-d&ei=qzz_YvO0JuyImgbUm6joCw&oq=congratulatoi+flowers&gs_lcp=Cgdnd3Mtd2l6EAEYADIECAAQDTIECAAQDTIICAAQHhANEAUyCAgAEB4QCBANMgoIABAeEA8QCBANMgUIABCGAzIFCAAQhgMyBQgAEIYDMgUIABCGAzoECAAQRzoHCAAQsQMQQzoECAAQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQM6CAgAELEDEIMBOgUIABCABDoGCAAQHhAHSgQIQRgASgQIRhgAUIgVWPxCYPthaAFwA3gAgAGtCYgB-yySAQszLTEuMS4yLjIuMpgBAKABAcgBCMABAQ&sclient=gws-wiz">Congratulations</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=funeral+flowers&client=firefox-b-d&ei=zjz_YseiJICh1e8PzdKC2Ak&ved=0ahUKEwjHwd3ssdL5AhWAUPUHHU2pAJsQ4dUDCA0&uact=5&oq=funeral+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyCwgAELEDEIMBEJECMgQIABBDMgUIABCRAjIFCAAQgAQyBggAEB4QBzIFCAAQgAQyBQgAEIAEMgYIABAeEAcyBggAEB4QBzIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6BAgAEA06CAgAEB4QDxAHOggIABAeEAcQBToFCAAQhgM6BwgAELEDEEM6CggAELEDEIMBEEM6CAgAEIAEELEDOggIABCxAxCRAjoICAAQsQMQgwFKBAhBGABKBAhGGABQ-BBYu0hg5ktoAXABeACAAcQFiAHDOpIBCjMtMTQuMi4yLjGYAQCgAQHIAQnAAQE&sclient=gws-wiz">Funeral</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=get+well+soon+flowers&client=firefox-b-d&ei=8Tz_Yo66K4fM-QbOm5moDg&ved=0ahUKEwjO9rz9sdL5AhUHZt4KHc5NBuUQ4dUDCA0&uact=5&oq=get+well+soon+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBAgAEEMyCggAELEDEIMBEEMyCggAELEDEIMBEEMyCAgAEIAEELEDMgQIABBDMgoIABCxAxCDARBDMgQIABBDMgoILhDHARDRAxBDMgUIABCABDoECAAQRzoGCAAQHhAHSgQIQRgASgQIRhgAUIcGWIE-YOdGaABwAngBgAGCCIgBtT2SAQ0yLTMuNy4xLjQuMS4xmAEAoAEByAEIwAEB&sclient=gws-wiz">Get Well Soon</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=goodluck+flowers&client=firefox-b-d&ei=Ez3_Yo4ezvLBA82knqAM&ved=0ahUKEwjO86yNstL5AhVOeXAKHU2SB8QQ4dUDCA0&uact=5&oq=goodluck+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyCggAEOQCELADGAEyCggAEOQCELADGAEyCggAEOQCELADGAEyDAguEMgDELADEEMYAjISCC4QxwEQ0QMQyAMQsAMQQxgCMhIILhDHARDRAxDIAxCwAxBDGAJKBAhBGABKBAhGGAFQzgdYky1gozVoAXABeAGAAb4LiAHtEpIBBTYtMS4xmAEAoAEByAESwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz">Good luck</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=new+home+flowers&client=firefox-b-d&ei=OT3_Yv7TEPOl1e8P0YGoyAM&ved=0ahUKEwi-1MyfstL5AhXzUvUHHdEACjkQ4dUDCA0&uact=5&oq=new+home+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyBAgAEEMyBggAEB4QBzIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHOgcIABBHELADOgQIABANOgoIABAeEA8QBxAKOggIABCxAxCRAjoKCAAQsQMQgwEQQzoFCAAQkQI6CwguELEDEIMBEJECOggIABCABBCxAzoLCAAQsQMQgwEQkQI6CAgAELEDEIMBSgQIQRgASgQIRhgAUIUSWLA9YLxBaANwAXgAgAHnBIgBiiiSAQczLTcuMS40mAEAoAEByAEIwAEB&sclient=gws-wiz">New Home</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=retirement+flowers&client=firefox-b-d&ei=Xz3_YvzMCprihwOCoYB4&ved=0ahUKEwi8-NWxstL5AhUa8WEKHYIQAA8Q4dUDCA0&uact=5&oq=retirement+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzoHCAAQRxCwAzoKCAAQRxCwAxDJAzoHCAAQsAMQQzoNCC4QxwEQ0QMQsAMQQzoHCAAQsQMQQzoKCAAQsQMQgwEQQzoECAAQQzoFCAAQkQI6CAgAEIAEELEDOggIABCxAxCRAkoECEEYAEoECEYYAFClEli-RmCXTGgBcAF4AIABuQqIAdBIkgENMi00LjYuMS4yLjEuM5gBAKABAcgBCsABAQ&sclient=gws-wiz">Retirement</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=romance+flowers&client=firefox-b-d&ei=fT3_YpWXN6eB1e8P44ujqAs&ved=0ahUKEwjVyanAstL5AhWnQPUHHePFCLUQ4dUDCA0&uact=5&oq=romance+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEB4QBzIICAAQHhAHEAoyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyCAgAEB4QDxAHMggIABAeEA8QBzIICAAQHhAPEAcyCAgAEB4QDxAHMggIABAeEA8QBzoHCAAQRxCwAzoKCAAQRxCwAxDJAzoHCAAQsAMQQzoECAAQDToECAAQQzoHCAAQsQMQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQM6BQgAEIAESgQIQRgASgQIRhgAULkIWPYwYOo1aAJwAXgAgAGMCIgBzC6SAQ0yLTEuNS4zLjMuMC4xmAEAoAEByAEKwAEB&sclient=gws-wiz">Romance</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=surprise+flowers&client=firefox-b-d&ei=mj3_YpPfBoHv-Qbu3rqICw&oq=surp+flowers&gs_lcp=Cgdnd3Mtd2l6EAEYAjIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHOgcIABBHELADOgQIABANOggIABCxAxCRAjoECAAQQzoLCC4QsQMQgwEQkQI6CAgAEIAEELEDOgsIABCxAxCDARCRAjoFCAAQkQI6CggAELEDEIMBEEM6BQgAEIAESgQIQRgASgQIRhgAUNcHWLAhYNs6aAFwAXgAgAHHBogB8SOSAQsyLTEuMi4yLjIuMpgBAKABAcgBCMABAQ&sclient=gws-wiz">Surprise Flowers</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=sympathy+flowers&client=firefox-b-d&ei=zT3_YoueNdWN-AadyI_IDg&ved=0ahUKEwjLuLrmstL5AhXVBt4KHR3kA-kQ4dUDCA0&uact=5&oq=sympathy+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIFCAAQgAQyBggAEB4QBzIGCAAQHhAHMgUIABCABDoHCAAQRxCwAzoHCAAQsAMQQzoHCC4QsAMQQzoICAAQsQMQkQI6CggAELEDEIMBEEM6CAgAEIAEELEDOgUIABCRAjoLCC4QsQMQgwEQkQI6BAgAEEM6CAgAELEDEIMBOggIABAeEAcQCkoECEEYAEoECEYYAFDeDliRRGCnSWgDcAF4AIAB6RCIAfY_kgENMy02LjUuMC4yLjktMZgBAKABAcgBCsABAQ&sclient=gws-wiz">Sympathy</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=thank+you+flowers&client=firefox-b-d&ei=7j3_YoKiD9iA-AbR8ZKYBg&ved=0ahUKEwiC0fL1stL5AhVYAN4KHdG4BGMQ4dUDCA0&uact=5&oq=thank+you+flowers&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBQgAEIAEMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAc6BwgAEEcQsAM6CggAEEcQsAMQyQM6BwgAELADEEM6CggAEOQCELADGAE6EgguEMcBENEDEMgDELADEEMYAjoECAAQQzoHCAAQsQMQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQNKBAhBGABKBAhGGAFQiwlYuSlgii5oAXABeACAAZgDiAGVJ5IBCDItMy4xMS4xmAEAoAEByAETwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz">Thank you</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.google.com/">More</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Types
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.google.com/search?q=Rose+flower&client=firefox-b-d&ei=vD__YsPFCZvM-QaO5rGgCw&ved=0ahUKEwjDk5PStNL5AhUbZt4KHQ5zDLQQ4dUDCA0&uact=5&oq=Rose+flower&gs_lcp=Cgdnd3Mtd2l6EAMyCwguEIAEELEDEIMBMgUIABCABDIICAAQgAQQyQMyBQgAEIAEMgUIABCABDIICAAQgAQQsQMyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyCwgAEIAEELEDEIMBSgQIQRgASgQIRhgAUI0CWJQDYLMOaABwAXgAgAGxBogB3haSAQU1LTIuMpgBAKABAcABAQ&sclient=gws-wiz">Roses</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=tulip&client=firefox-b-d&ei=Zjr_YpCOMtib-AbG_rmIBQ&ved=0ahUKEwiQ2Y3Hr9L5AhXYDd4KHUZ_DlEQ4dUDCA0&uact=5&oq=tulip&gs_lcp=Cgdnd3Mtd2l6EAMyBwguELEDEEMyBAgAEEMyBQgAEIAEMgcIABCxAxBDMggIABCABBCxAzIFCAAQgAQyBQgAEIAEMgsIABCABBCxAxCDATIFCAAQgAQyBAgAEEM6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6FQguEMcBENEDENQCEMgDELADEEMYAjoPCC4Q1AIQyAMQsAMQQxgCOgwILhDIAxCwAxBDGAI6BAguEEM6CgguEMcBENEDEEM6EQguEIAEELEDEIMBEMcBENEDOgUILhCABDoICC4QsQMQgwE6CwguEIAEELEDENQCOggILhCABBCxAzoLCC4QgAQQsQMQgwE6BQgAELEDSgQIQRgASgQIRhgBUM08WJNHYIdLaAVwAXgAgAG3A4gB2g-SAQUzLTIuM5gBAKABAcgBE8ABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz">Tulip</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=daisy+flower&client=firefox-b-d&ei=CDv_YuaMCs3_wAOi9a3gBQ&oq=daisy&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQsAMQQzIKCAAQ5AIQsAMYATIKCAAQ5AIQsAMYATIKCAAQ5AIQsAMYATIPCC4Q1AIQyAMQsAMQQxgCMg8ILhDUAhDIAxCwAxBDGAIyDAguEMgDELADEEMYAjIPCC4Q1AIQyAMQsAMQQxgCSgQIQRgASgQIRhgBUABYAGCAI2gBcAF4AIABAIgBAJIBAJgBAMgBEMABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz">Daisy</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=iris+flower&client=firefox-b-d&ei=Gjv_YunKOdGB-AaaspiADA&ved=0ahUKEwjpv_-csNL5AhXRAN4KHRoZBsAQ4dUDCA0&uact=5&oq=iris+flower&gs_lcp=Cgdnd3Mtd2l6EAMyCgguELEDENQCEEMyBQgAEIAEMgoIABCxAxCDARBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgQIABBDMgYIABAeEAcyBggAEB4QBzIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6DAguEMgDELADEEMYAjoPCC4Q1AIQyAMQsAMQQxgCSgQIQRgASgQIRhgBUIcnWPA6YIdHaAFwAXgAgAGKDIgByCuSAQU3LTMuMZgBAKABAcgBEMABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz">Iris</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=orchid+flower&client=firefox-b-d&ei=Vzv_YpisGraB1e8PqbGb8Aw&ved=0ahUKEwjYs-u5sNL5AhW2QPUHHanYBs4Q4dUDCA0&uact=5&oq=orchid+flower&gs_lcp=Cgdnd3Mtd2l6EAMyBwguELEDEEMyBQgAEIAEMgcIABCxAxBDMgoIABCxAxCDARBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBAgAEEM6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6DwguENQCEMgDELADEEMYAjoMCC4QyAMQsAMQQxgCOgUIABCxA0oECEEYAEoECEYYAVD7CVjsIGDjKmgBcAF4AIAB2gOIAbkbkgEFMy0yLjaYAQCgAQHIARDAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz">Orchid</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.google.com/">More</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Seasons
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.google.com/search?q=spring+flower&client=firefox-b-d&ei=jTv_YojTEMKI-Aa-uIWwDA&ved=0ahUKEwjIzcHTsNL5AhVCBN4KHT5cAcYQ4dUDCA0&uact=5&oq=spring+flower&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBwgAELEDEEMyBAguEEMyBAgAEEMyBAgAEEMyCggAELEDEIMBEEMyBAgAEEMyBwgAELEDEEMyBAgAEEMyCAgAEIAEELEDOgcIABBHELADOgoIABBHELADEMkDOgcIABCwAxBDOgoIABDkAhCwAxgBOg8ILhDUAhDIAxCwAxBDGAI6DAguEMgDELADEEMYAjoGCAAQHhAHSgQIQRgASgQIRhgBUPMGWJoiYPolaAFwAXgAgAH6BogBnCKSAQc0LTMuNC4xmAEAoAEByAETwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz">Spring</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=summer+flower&client=firefox-b-d&ei=vzv_YoCxCeWH1e8PrbWD-AI&ved=0ahUKEwjAjKbrsNL5AhXlQ_UHHa3aAC8Q4dUDCA0&uact=5&oq=summer+flower&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyBQgAEIAEMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYAToPCC4Q1AIQyAMQsAMQQxgCOgwILhDIAxCwAxBDGAI6CAgAEB4QBxAKOgYIABAeEAdKBAhBGABKBAhGGAFQ7Q1YvSZgjzpoAXABeACAAd8PiAHUNJIBCTQtNS40LjktMZgBAKABAcgBEsABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz">Summer</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=autumn+flower&client=firefox-b-d&ei=6Dv_YtaVF5fp-Ab0l7K4Dw&ved=0ahUKEwjWqfr-sNL5AhWXNN4KHfSLDPcQ4dUDCA0&uact=5&oq=autumn+flower&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEJECMgUIABCRAjIFCAAQgAQyBQgAEJECMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgwILhDIAxCwAxBDGAE6DwguENQCEMgDELADEEMYAToHCAAQsQMQQzoECAAQQzoICAAQgAQQsQM6BggAEB4QB0oECEEYAEoECEYYAVCCCFifImD-JWgBcAF4AIABygOIAYMkkgEFMy05LjOYAQCgAQHIARTAAQHaAQYIARABGAg&sclient=gws-wiz">Autumn</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=winter+flower&client=firefox-b-d&ei=BTz_YuGALJWQhwPh7TU&ved=0ahUKEwihl_mMsdL5AhUVyGEKHeF2DQAQ4dUDCA0&uact=5&oq=winter+flower&gs_lcp=Cgdnd3Mtd2l6EAMyCwgAELEDEIMBEJECMgsIABCxAxCDARCRAjIFCAAQkQIyBQgAEJECMgUIABCRAjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgwILhDIAxCwAxBDGAE6FQguEMcBENEDENQCEMgDELADEEMYAToPCC4Q1AIQyAMQsAMQQxgBOggIABCxAxCRAjoECAAQQzoICAAQgAQQsQM6BwguENQCEEM6DQguELEDEIMBENQCEENKBAhBGABKBAhGGAFQ_gZYhx5g7CZoAXABeACAAY8FiAHbLJIBBzMtMy41LjSYAQCgAQHIARLAAQHaAQYIARABGAg&sclient=gws-wiz">Winter</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 black_border" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--Slider-->
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/slider1a.jpg" class="d-block  w-100 slider_one_height" alt="error">
+                    <div class="carousel-caption d-md-block font_color">
+                        <h1>Fresh Flowers</h1>
+                        <h4>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </h4>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/slider1b.jpg" class="d-block w-100 slider_one_height" alt="error">
+                    <div class="carousel-caption  d-md-block font_color">
+                        <h1>Free Home Delivery</h1>
+                        <h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </h4>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/slider1c.jpg" class="d-block w-100 slider_one_height" alt="error">
+                    <div class="carousel-caption d-md-block font_color">
+                        <h1>24x7 Services</h1>
+                        <h4>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </h4>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+     <!--Trending-->
+    <div class="text-center heading" id="shop">
+        <h1>Trending Products</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify_content type">
+            <div class="col-xl-3 col-sm-10 card_border m-lg-4">
+                <div class="card resize" style="width: 18rem;">
+                    <img class="card-img-top type_size card_image image-fluid" src="/images/card1a.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Simple Decoration</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-10 card_border m-lg-4">
+                <div class="card resize" style="width: 18rem;">
+                    <img class="card-img-top type_size card_image image-fluid" src="/images/card1b.jpg"
+                        alt="Card image cap">
+                    <div class="card-body ">
+                        <h5 class="card-title">Pure Friendship</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-10 card_border m-lg-4">
+                <div class="card resize" style="width: 18rem;">
+                    <img class="card-img-top type_size card_image image-fluid" src="/images/card1c.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">True Love</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!--Types-->
+    <div class="text-center heading">
+        <h1>Bouquets By Ocassion</h1>
+    </div>
+
+    <div class="m-lg-4">
+        <div class="container-fluid form">
+            <div class="row justify_content">
+                <div class="col-md-5 Smooch type border_blue text-center">
+                    <div>
+                        <h4>Romance</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique deserunt, quibusdam
+                            soluta
+                            assumenda nulla ad, sapiente, reiciendis tempore vero eaque perferendis unde ipsam cum nisi
+                            voluptatibus.
+                        </p>
+                        <a href="#" class="btn btn-danger">Buy Now</a>
+                    </div>
+                    <div><img src="/images/romance.jpg" alt="error" class="type_size"></div>
+                </div>
+                <div class="col-md-5 Smooch type border_blue text-center">
+                    <div>
+                        <h4>Anniversary</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique deserunt, quibusdam
+                            soluta
+                            assumenda nulla ad, sapiente, reiciendis tempore vero eaque perferendis unde ipsam cum nisi
+                            voluptatibus.</p>
+                        <a href="#" class="btn btn-danger">Buy Now</a>
+                    </div>
+                    <div><img src="/images/anniversary.jpg" alt="error" class="type_size"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify_content">
+                <div class="col-md-5 Smooch type border_blue text-center">
+                    <div>
+                        <h4>Christmas</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique deserunt, quibusdam
+                            soluta
+                            assumenda nulla ad, sapiente, reiciendis tempore vero eaque perferendis unde ipsam cum nisi
+                            voluptatibus.</p>
+                        <a href="#" class="btn btn-danger">Buy Now</a>
+                    </div>
+                    <div><img src="/images/christmas.jpg" alt="error" class="type_size"></div>
+                </div>
+                <div class="col-md-5 Smooch type border_blue text-center">
+                    <div>
+                        <h4>Birthday</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique deserunt, quibusdam
+                            soluta
+                            assumenda nulla ad, sapiente, reiciendis tempore vero eaque perferendis unde ipsam cum nisi
+                            voluptatibus.</p>
+                        <a href="#" class="btn btn-danger">Buy Now</a>
+                    </div>
+                    <div><img src="/images/birthday.jpg" alt="error" class="type_size"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify_content">
+                <div class="col-md-5 Smooch type border_blue text-center">
+                    <div>
+                        <h4>Goodluck</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique deserunt, quibusdam
+                            soluta
+                            assumenda nulla ad, sapiente, reiciendis tempore vero eaque perferendis unde ipsam cum nisi
+                            voluptatibus.</p>
+                        <a href="#" class="btn btn-danger">Buy Now</a>
+                    </div>
+                    <div><img src="/images/goodluck.jpg" alt="error" class="type_size"></div>
+                </div>
+                <div class="col-md-5 Smooch type border_blue text-center">
+                    <div>
+                        <h4>Sympathy</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique deserunt, quibusdam
+                            soluta
+                            assumenda nulla ad, sapiente, reiciendis tempore vero eaque perferendis unde ipsam cum nisi
+                            voluptatibus.</p>
+                        <a href="#" class="btn btn-danger">Buy Now</a>
+                    </div>
+                    <div><img src="/images/sympathy.jpg" alt="error" class="type_size"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Wedding Arrangement-->
+    <div class="container-fluid">
+        <div class="row justify_content">
+            <div class="col-md-10 Smooch type border_blue">
+                <div id="one">
+                    <h1>Wedding Arrangements</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex facere nostrum fugiat
+                        dignissimos fugit
+                        quasi? Animi nostrum harum saepe perferendis laudantium. Debitis architecto error rerum
+                        doloribus ab cumque
+                        obcaecati.</p>
+                    <a href="#" class="btn btn-danger">Book Now</a>
+                </div>
+                <div><img src="/images/sweet_memory.jpg" alt="error" class="sweet_height"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Shop-->
+    <div class="text-center heading">
+        <h1>Our Shop Images</h1>
+    </div>
+    <div class="container-fluid justify_content">
+        <div class="row justify_content">
+            <div class="col-lg-3 m-4 col-sm-8 "><img src="/images/shop1a.jpg" class="shop_size" alt="error"></div>
+            <div class="col-lg-3 m-4 col-sm-8 "><img src="/images/shop1b.jpg" class="shop_size" alt="error"></div>
+            <div class="col-lg-3 m-4 col-sm-8 "><img src="/images/shop1c.jpg" class="shop_size" alt="error"></div>
+        </div>
+    </div>
+
+    <!--Social Media -->
+    <div class="text-center heading" id="contact">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row social_orient justify_content">
+            <div><a href="https://www.instagram.com "><img src="/images/instagram.jpg" alt="error"
+                        class="social m-4"></a></div>
+            <div><a href="https://www.facebook.com"><img src="/images/facebook.png" alt="error" class="social m-4"></a>
+            </div>
+            <div><a href="https://twitter.com"><img src="/images/twitter.png" alt="error" class="social m-4"></a></div>
+        </div>
+    </div>
+    <footer class="text-center">Copyright &copy; All rights reserved 2022</footer>
+    <!--Images used in this website are taken from unsplash and google-->
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
