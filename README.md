@@ -1,6 +1,22 @@
 # Flowers.github.io
-It is a responsive website of a flower shop which sells different types of flowers and bouquets.
-It is built using html, css and bootstrap.
-In this you can buy different types of flowers and bouquets according to occasions and seasons.
-You can also give us a chance to arrange your wedding in this option we will arrange your wedding venue with beautiful flowers.
-We provide 24x7 services that means you can contact us anytime and we also provide free home delivery.
+It is a responsive website of a flower shop which sells different types of flowers and bouquets. It is built using HTML, CSS and Bootstrap. In this you can buy different types of flowers and bouquets according to occasions and seasons. You can also give us a chance to arrange your wedding in this option we will arrange your wedding venue with beautiful flowers. We provide 24x7 services that means  you can contact us anytime and we also provide free home delivery.
+
+Lets first start with the navbar, it is a responsive navbar. It has “Home”, ”Shop”, ”Contact”,  “Occasions”, “Types”, “Seasons”  options and a “search  bar”, you click on anything  and certain function will work. And also when you will take cursor over any option you will see hover effect in which the colour gets dark and a line comes below that heading.
+Let’s first starts with “Home” when you click on it you will at the beginning of the website. When you click on the  “Shop”, you will be at the “Trending products”.  So when you  wanna  buy anything you just have to click on the shop and then you will  see our  trending products and bouquets by occasion from where you can buy anything  on a single click on “Buy now”  button. Currently it doesn’t work but it will work in the near future.
+When you click on “Contact” then you will be at our contact page where we have given multiple options to you like Instagram,  Facebook  and Twitter for contacting us. You just have to click on any social media icon and you will be send directly to our page on that social media and then you can ask any questions or doubts regarding the shop.
+When you click on “Occasions” you will see a list of several  occasions like “Anniversary”, “Birthday”, “Christmas”, “Congratulations”, “Funeral”, “Get Well Soon”, “Good luck”, “New Home”,  “Retirement”,  “Romance”,  “Surprise Flowers”, “Sympathy”, ”Thank  you” and many more, click on any occasion and you will see details about that occasion and multiple options to buy.
+When you click on “Types” you will see the list of types of flowers like “Roses”, “Tulip”, ” Daisy”, “Iris”, “Orchid”, and many more, click on any type  and you will see details about that type and multiple options to buy.
+When you click on “Seasons” you will see the list of Seasons  like “Spring”, “Summer”, ” Autumn” and “Winter”,  click on any season  and you will see details about that season  and multiple options to buy.
+We also have a search bar here in which you can search any type of flower but currently it’s not working but it will work in the near future.
+
+Now let’s talk about carousal, i have used bootstrap carousal here you can see it changes pictures automatically plus it also tells others about our services and facilities like “Free home delivery”, 24x7 Services and  we deals with fresh flowers.  There are buttons on left and right side for next or previous images.
+
+Let’s talk about our “Trending Products”,  here  i show products that are trending now days in short  we are talking about products which are in demand, I used bootstrap cards here but i also made some changes in this like when the screen gets smaller then the position of text and images changes from “top to bottom”  to “right to left”. And when you take your cursor over the heading  “Trending Products” you will see hover effect like it will change its colour from blue to red and it’s font style (font-family) also changes.
+
+Now we will talk about “Bouquets by Occasions” here we give best choices to our customer out of all choices and you just have to click on buy now button you that bouquet will be yours. Here i used hover effect on the boxes when you move your cursor over the boxes you will see the shape of boxes changes and when you take your cursor over the heading  “Bouquet by Occasion” you will see hover effect like it will change its colour from blue to red and it’s font style (font-family) also changes.
+
+We also decorates wedding venue with beautiful flowers and you can book us for that service on a single click on “Book now” button. Currently that button didn’t do anything but in future you will get a call from our side when you click on that button and our representative will talk to you about the arrangements.
+
+Next is “Our Shop Images” we have share our shop’s images so that when you try to visit our shop you won’t  face  any problem while  recognizing our shop  and   in our heading “Our Shop Images”  you will see hover effect like it will change its colour from blue to red and it’s font style (font-family) also changes.
+
+And in last social media icons were given so when you click on those icons you will be at our social media page.
